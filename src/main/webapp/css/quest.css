@@ -1,0 +1,108 @@
+.btn {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.content {
+    flex: 1;
+}
+
+.btn-danger {
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-danger:hover {
+    background-color: #ff4d4d;
+    transform: scale(1.05);
+}
+
+.btn-success {
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-success:hover {
+    background-color: #28a745;
+    transform: scale(1.05);
+}
+.fade-in {
+    opacity: 0;
+    animation: fadeInEffect 2s forwards;
+}
+
+@keyframes fadeInEffect {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.question-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.question-form {
+    flex: 1;
+}
+
+.image-container {
+    width: 150px;
+    height: auto;
+}
+
+.question-image {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.question-image:hover {
+    transform: scale(1.1);
+}
+
+#question-3 .question-image {
+    opacity: 1;
+}
+
+.p-translucent {
+    background-color: rgba(255, 255, 255, 0.4); /* Белый с 80% прозрачности */
+    backdrop-filter: blur(5px); /* Размытие фона */
+}
+h2 {
+    color: #333; /* Темный цвет текста */
+    font-size: 1.8rem; /* Размер шрифта */
+    font-weight: bold; /* Жирный шрифт */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Тень для текста */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+h1.question-text {
+    color: #fff; /* Белый цвет */
+    font-size: 2rem; /* Очень крупный текст */
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* Сильная тень */
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.6); /* Затемнённый фон */
+    border-radius: 10px;
+}
+
+.reason-text {
+    color: #c50404; /* Красный цвет для текста */
+    font-size: 1.6rem;
+    font-style: italic;
+    margin-top: 10px;
+}

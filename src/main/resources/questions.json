@@ -1,0 +1,62 @@
+[
+  {
+    "id": -2,
+    "text": "YOU LOOSE",
+    "imageLink": "dragon.jpg",
+    "answers":
+    [
+      {"id": -21, "text": "Leave the body", "nextQuestionId": 1, "reasonIfKnightDies": null}
+    ]
+  },
+  {"id": -1,
+    "text": "YOU WIN",
+    "imageLink": "win-pic.jpg",
+    "answers":
+    [
+      {"id": -11, "text": "Kiss the princess", "nextQuestionId": 1, "reasonIfKnightDies": null}
+    ]
+  },
+  {
+    "id": 1,
+    "text": "The local king sent you to save the princess from the dragon. You are standing in front of an abandoned castle. You will be killed if you return without the princess.",
+    "imageLink": "castle.jpg",
+    "answers":
+    [
+      {"id": 11, "text": "Enter castle", "nextQuestionId": 2, "reasonIfKnightDies": null},
+      {"id": 12, "text": "Run away", "nextQuestionId": -2,  "reasonIfKnightDies":  "You were killed by the king"}
+    ]
+  },
+  {
+    "id": 2,
+    "text": "You enter a large hall and see a staircase leading up in front of you. After looking around a bit, you see a small door to your right with the sign \"Armory\". Where are you going?",
+    "imageLink": "stairway.jpg",
+    "answers":
+    [
+      {"id": 21, "text": "Go to the armory", "nextQuestionId": 3, "reasonIfKnightDies": null},
+      {"id": 22, "text": "Go back", "nextQuestionId": 1, "reasonIfKnightDies": null},
+      {"id": 23, "text": "Climb the stairs", "nextQuestionId": -2, "reasonIfKnightDies": "As soon as you climb the steps, you are burned by the dragon's flame."}
+    ]
+  },
+  {
+    "id": 3,
+    "text": "You are very lucky - you have found a magic sword and now you are boldly climbing the stairs in search of the princess.Entering the huge hall you stumble over the corpse of a dead knight - the poor fellow burned without even having time to remove his shield to protect himself from the fire. In the center of the room you see a sleeping dragon and a princess sitting next to him. She motions for you to freeze. What do you do?",
+    "imageLink": "armory.jpg",
+    "answers":
+    [
+      {"id": 31, "text": "Rush the dragon while he sleeps", "nextQuestionId": -2, "reasonIfKnightDies": "You quietly approach the dragon and strike him in the neck. You have inflicted a deep, but not fatal wound. The awakened dragon bites off your head in a split second."},
+      {"id": 32, "text": "Take the shield from the knight", "nextQuestionId": -1, "reasonIfKnightDies": null},
+      {"id": 33, "text": "Use gestures to tell the princess to come very quietly to you.", "nextQuestionId": 4, "reasonIfKnightDies": null},
+      {"id": 34, "text": "Go back", "nextQuestionId": 2 , "reasonIfKnightDies": null}
+    ]
+  },
+  {
+    "id": 4,
+    "text": "The princess looks at you in surprise and starts screaming loudly, \"I will not marry a coward!\" Then she turns to the dragon and kicks him in the head with all her might. The dragon wakes up and fills his mouth with flames.",
+    "imageLink": "dragon.jpg",
+    "answers":
+    [
+      {"id": 41, "text": "Take the shield from the knight", "nextQuestionId": -1, "reasonIfKnightDies": null},
+      {"id": 42, "text": "Try to dodge", "nextQuestionId": -2, "reasonIfKnightDies": "The dragon spews so much fire that everything around it burns, including you and the princess."}
+    ]
+  }
+]
