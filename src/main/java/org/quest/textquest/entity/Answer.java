@@ -12,10 +12,7 @@ public class Answer {
     String reasonIfKnightDies;
 
     @JsonCreator
-    public Answer(@JsonProperty("id") Long id,
-                  @JsonProperty("text") String text,
-                  @JsonProperty("nextQuestionId") Long nextQuestionId,
-                  @JsonProperty("reasonIfKnightDies") String reasonIfKnightDies) {
+    public Answer(@JsonProperty("id") Long id, @JsonProperty("text") String text, @JsonProperty("nextQuestionId") Long nextQuestionId, @JsonProperty("reasonIfKnightDies") String reasonIfKnightDies) {
         this.id = id;
         this.text = text;
         this.nextQuestionId = nextQuestionId;

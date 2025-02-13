@@ -1,16 +1,16 @@
-package org.quest.textquest;
-
-import java.io.*;
-import java.util.Date;
+package org.quest.textquest.controller;
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
-import jakarta.servlet.annotation.*;
 import org.quest.textquest.entity.Answer;
 import org.quest.textquest.entity.Question;
 import org.quest.textquest.service.QuestService;
+
+import java.io.IOException;
+import java.util.Date;
 
 @WebServlet("/quest")
 public class QuestServlet extends HttpServlet {
@@ -39,7 +39,7 @@ public class QuestServlet extends HttpServlet {
         String currentQuestionId = null;
         if (cookies != null) {
             for (Cookie cookie : cookies) {
-                if("username".equals(cookie.getName())) {
+                if ("username".equals(cookie.getName())) {
                     username = cookie.getValue();
                 }
                 if ("currentQuestionId".equals(cookie.getName())) {

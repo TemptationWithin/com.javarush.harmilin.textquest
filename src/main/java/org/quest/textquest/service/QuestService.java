@@ -6,11 +6,11 @@ import lombok.Getter;
 public class QuestService {
     private QuestionService questionService;
 
-    public QuestService(){
+    public QuestService() {
         questionService = new QuestionService();
     }
 
-    public void startQuest(){
+    public void startQuest() {
         questionService.loadQuestions();
     }
 }

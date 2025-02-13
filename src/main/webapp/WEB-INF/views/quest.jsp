@@ -77,7 +77,7 @@
 <footer class="text-center text-white bg-dark py-3 mt-auto">
     <div>
         <h5>Player: ${username}</h5>
-        <p>&copy; 2025 Text Quest | Session ID: ${sessionId} | Created at: ${sessionCreateTime}</p>
+        <p>&copy; 2025 Text Quest by Yahor Harmilin | Session ID: ${sessionId} | Created at: ${sessionCreateTime}</p>
     </div>
 </footer>
 
